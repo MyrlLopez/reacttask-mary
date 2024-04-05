@@ -1,0 +1,132 @@
+
+
+  /* Variables */
+  :root{
+    --color-primario: #98fc3b;
+    --color-secundario: #2fe9ab;
+    --color-texto: #b4c2c2;
+    --text-default: "Open Sans";
+}
+
+/* Estilos Generales */
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    font-family: var(--text-default);
+}
+
+body{
+    background-color: hwb(77 94% 3% / 0.973)  !important ;
+   
+}
+  
+   /* Menu Principal */
+
+.menu-principal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 30px;
+    margin-top: 10px;
+    background: var(--color-background);
+    z-index: 1;
+}
+
+.logo img{
+    width: 130px;
+    cursor: pointer;
+}
+
+.menu-barra{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-barra .enlaces ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu-barra .enlaces ul li a{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 600;
+    background: linear-gradient(currentColor , currentColor);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all 0.5s;
+}
+
+.menu-barra .enlaces ul li a:hover{
+    color: #2fe938;;
+    background-size: 50% 2px;
+}
+
+.menu-barra .sociales a{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: 700;
+    text-decoration:none ;
+    color: var(--color-texto);
+    transition: all  0.5s;
+}
+
+.menu-barra .sociales a:hover{
+    color: #2fe976;;
+}
+
+.menu-principal i{
+    cursor: pointer;
+    color: var(--color-texto);
+    font-size: 30px;
+    float: right;
+    display: none;
+    transition: all 0.5s;
+}
+
+.menu-principal i:hover{
+    color: #2fe983;;
+}
+
+
+
+.container-productos{
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+
+.imagen-productos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-productos img{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    transition: all 0.3s;
+}
+
+.container-productos:hover .imagen-productos img{
+    transform: scale(1.15);
+}
+
+
